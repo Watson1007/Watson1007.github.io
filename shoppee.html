@@ -6,26 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        .wrapper{
+            width: 1200px;
+        }
         .top{
-            width: 960px;
+            width: 88%;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
         .x{
-            width: 20px;
-            background-color: red;
+            width: 23px;
+            background-color: rgb(219, 33, 33);
             color:white;
+            font-size: 20px;
+            font-weight: 900;
             border-radius: 50%;
             text-align: center;
             justify-content: center;
+            margin:0 3px;
         }
-        .right>.item{
+        .top-right>.item{
             display: flex;
         }
         .top-left{
             display: flex;
             font-size: 10px;
+        }
+        .top-left img{
+            width: 15px;
+            height: 15px;
+            vertical-align: bottom;
         }
         
         .top-left>.item{
@@ -37,10 +48,11 @@
         
         .body-right{
             left:0;
+            top: 0;
 
         }
         .container{
-            margin: 10px;
+            margin: 0 10px 10px 10px;
         }
         .text{
             text-align: center;
@@ -53,7 +65,7 @@
         
         .up{
             display: flex;
-            margin-bottom: 20px;
+            margin-bottom: 5px;
         }
         .down{
             display: flex;
@@ -62,67 +74,69 @@
     </style>
 </head>
 <body>
-    <div class="top">
-        <div class="top-left">
-            <div class="item" style="color:red">蝦皮商城</div>
-            <div class="item">15天鑑賞期</div>
-            <div class="item">蝦皮安心退</div>
-            <div class="item">正品保證</div>
-        </div>
-        <div class="right">
-            <div class="item">
-                查看全部 
-                <div class="x">></div>
+    <div class="wrapper">
+        <div class="top">
+            <div class="top-left">
+                <div class="item" style="color:red; border-right: 1px solid #48454550; padding-right: 10px;">蝦皮商城</div>
+                <div class="item"><img src="./pic/1.png">15天鑑賞期</div>
+                <div class="item"><img src="./pic/2.png">蝦皮安心退</div>
+                <div class="item"><img src="./pic/3.png">正品保證</div>
+            </div>
+            <div class="top-right">
+                <a class="item">
+                    查看全部
+                    <div class="x">></div>
+                </a>
             </div>
         </div>
-    </div>
-    <div class="body">
-        <div class="body-left">
-            <img src="https://fakeimg.pl/300x500/200">
-        </div>
-        <div class="body-right">
-            <div class="up">
-                <div class="container">
-                    <div class="item"><img src="https://fakeimg.pl/150x150/200"></div>
-                    <div class="brand"><img src="https://fakeimg.pl/150x40/200"></div>
-                    <div class="text">全館五折up</div>
-                </div>
-                <div class="container">
-                    <div class="item"><img src="https://fakeimg.pl/150x150/200"></div>
-                    <div class="brand"><img src="https://fakeimg.pl/150x40/200"></div>
-                    <div class="text">滿$299折$50</div>
-                </div>
-                <div class="container">
-                    <div class="item"><img src="https://fakeimg.pl/150x150/200"></div>
-                    <div class="brand"><img src="https://fakeimg.pl/150x40/200"></div>
-                    <div class="text">全館47折up</div>
-                </div>
-                <div class="container">
-                    <div class="item"><img src="https://fakeimg.pl/150x150/200"></div>
-                    <div class="brand"><img src="https://fakeimg.pl/150x40/200"></div>
-                    <div class="text">國際書展領券85折</div>
-                </div>
+        <div class="body">
+            <div class="body-left">
+                <img src="./pic/4.png">
             </div>
-            <div class="down">
-                <div class="container">
-                    <div class="item"><img src="https://fakeimg.pl/150x150/200"></div>
-                    <div class="brand"><img src="https://fakeimg.pl/150x40/200"></div>
-                    <div class="text">最強3C領券再折</div>
+            <div class="body-right">
+                <div class="up">
+                    <div class="container">
+                        <div class="item"><img src="https://fakeimg.pl/150x150/200"></div>
+                        <div class="brand"><img src="https://fakeimg.pl/150x40/200"></div>
+                        <div class="text">全館五折up</div>
+                    </div>
+                    <div class="container">
+                        <div class="item"><img src="https://fakeimg.pl/150x150/200"></div>
+                        <div class="brand"><img src="https://fakeimg.pl/150x40/200"></div>
+                        <div class="text">滿$299折$50</div>
+                    </div>
+                    <div class="container">
+                        <div class="item"><img src="https://fakeimg.pl/150x150/200"></div>
+                        <div class="brand"><img src="https://fakeimg.pl/150x40/200"></div>
+                        <div class="text">全館47折up</div>
+                    </div>
+                    <div class="container">
+                        <div class="item"><img src="https://fakeimg.pl/150x150/200"></div>
+                        <div class="brand"><img src="https://fakeimg.pl/150x40/200"></div>
+                        <div class="text">國際書展領券85折</div>
+                    </div>
                 </div>
-                <div class="container">
-                    <div class="item"><img src="https://fakeimg.pl/150x150/200"></div>
-                    <div class="brand"><img src="https://fakeimg.pl/150x40/200"></div>
-                    <div class="text">蝦必最高30倍送</div>
-                </div>
-                <div class="container">
-                    <div class="item"><img src="https://fakeimg.pl/150x150/200"></div>
-                    <div class="brand"><img src="https://fakeimg.pl/150x40/200"></div>
-                    <div class="text">全店超商99免運</div>
-                </div>
-                <div class="container">
-                    <div class="item"><img src="https://fakeimg.pl/150x150/200"></div>
-                    <div class="brand"><img src="https://fakeimg.pl/150x40/200"></div>
-                    <div class="text">盛大進駐關注領券</div>
+                <div class="down">
+                    <div class="container">
+                        <div class="item"><img src="https://fakeimg.pl/150x150/200"></div>
+                        <div class="brand"><img src="https://fakeimg.pl/150x40/200"></div>
+                        <div class="text">最強3C領券再折</div>
+                    </div>
+                    <div class="container">
+                        <div class="item"><img src="https://fakeimg.pl/150x150/200"></div>
+                        <div class="brand"><img src="https://fakeimg.pl/150x40/200"></div>
+                        <div class="text">蝦必最高30倍送</div>
+                    </div>
+                    <div class="container">
+                        <div class="item"><img src="https://fakeimg.pl/150x150/200"></div>
+                        <div class="brand"><img src="https://fakeimg.pl/150x40/200"></div>
+                        <div class="text">全店超商99免運</div>
+                    </div>
+                    <div class="container">
+                        <div class="item"><img src="https://fakeimg.pl/150x150/200"></div>
+                        <div class="brand"><img src="https://fakeimg.pl/150x40/200"></div>
+                        <div class="text">盛大進駐關注領券</div>
+                    </div>
                 </div>
             </div>
         </div>
