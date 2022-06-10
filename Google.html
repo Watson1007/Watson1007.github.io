@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        nav{
+            height: 100px;
+            display: flex;
+            text-align: center;
+            justify-content: right;
+        }
+        .item{
+            margin: 15px 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            line-height: 30px;
+
+        }
+        .icon{
+            width: 30px;
+            height: 30px;
+            margin: 10px 20px;
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+        }
+        .icon span{
+            width: 5px;
+            height: 5px;
+            background-color: white;
+            display: block;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .icon span:nth-child(1){
+            left: 0;
+            top: 0;
+        }
+        .icon span:nth-child(2){
+            left: 12px;
+            top: 0;
+        }
+        .icon span:nth-child(3){
+            right: 0;
+            top: 0;
+        }
+        .icon span:nth-child(4){
+            left: 0;
+            top: 12px;
+        }
+        .icon span:nth-child(5){
+            left: 12px;
+            top: 12px;
+        }
+        .icon span:nth-child(6){
+            right: 0px;
+            top: 12px;
+        }
+        .icon span:nth-child(7){
+            left: 0px;
+            bottom: 0px;
+        }
+        .icon span:nth-child(8){
+            left: 12px;
+            bottom: 0px;
+        }
+        .icon span:nth-child(9){
+            right: 0px;
+            bottom: 0px;
+        }
+
+        .image{
+            width: 40px;
+            height: 40px;
+        }
+        .image img{
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            margin-top: 10px;
+
+        }
+        
+        .picture{
+            text-align: center;
+            margin: 100px 0 20px;
+        }
+        .wrapper{
+            justify-content: center;
+            text-align: center;
+        }
+        .searchbar{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            position: relative;
+        }
+        .searchbar input{
+            width: 600px;
+            height: 50px;
+            border-radius: 25px;
+            text-align: left;
+            padding-left: 60px;
+            outline: none;
+            font-size: 15px;
+            margin:0 20px 0 40px;
+
+        }
+        .lefticon{
+            width: 30px;
+            height: 30px;
+            position: relative;
+            top: 10px;
+            left: 80px;
+        }
+        .righticon{
+            width: 30px;
+            height: 30px;
+            position: relative;
+            right: 60px;
+            top: 10px;
+            cursor: pointer;
+        }
+        .item:hover{
+            text-decoration: underline;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a class="item" href="">Gmail</a>
+        <a class="item" href="">圖片</a>
+        <div class="icon">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        
+        <a class="image" href=""><img src="./pic/preview_001_720x1232.png"></a>
+    </nav>
+    <div class="picture">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png" alt="">
+    </div>
+    <div class="wrapper">
+        <div class="searchbar">
+            <img class="lefticon" src="./pic/search.svg" alt="searchicon">
+            <input type="search" placeholder="搜尋Google或輸入網址">
+            <img class="righticon" src="./pic/googlemic_clr_24px.svg" alt="mircoicon">
+        </div>
+    </div>
+    
+</body>
+</html>
