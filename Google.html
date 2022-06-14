@@ -11,10 +11,10 @@
             color: white;
         }
         nav{
-            height: 100px;
+            height: auto;
             display: flex;
             text-align: center;
-            justify-content: right;
+            justify-content: flex-end;
         }
         .item{
             margin: 15px 10px;
@@ -31,6 +31,13 @@
             cursor: pointer;
             display: inline-block;
             position: relative;
+        }
+        .onhover:hover{
+            background-color: rgba(239, 231, 231, 0.5);
+            border-radius: 50%;
+            widows: 40px;
+            height: 40px;
+            transition: 0.1s;
         }
         .icon span{
             width: 4px;
@@ -141,17 +148,19 @@
     <nav>
         <a class="item" href="">Gmail</a>
         <a class="item" href="">圖片</a>
-        <div class="icon">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+        <div class="onhover">
+            <div class="icon">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+        </div>
         
         <a class="userimage" href=""><img src="./pic/preview_001_720x1232.png"></a>
     </nav>
