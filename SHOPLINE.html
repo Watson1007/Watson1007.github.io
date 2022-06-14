@@ -77,7 +77,11 @@
             color: rgb(99, 156, 231)
         }
         a::after{
-            content: '-->';
+            content: '→';
+        }
+        a:hover::after{
+            content: '—→';
+            letter-spacing: 0em;
         }
         img{
             width: 100%;
