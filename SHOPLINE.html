@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/68b451df5d.js" crossorigin="anonymous"></script>
     <style>
         *{
             margin: 0;
@@ -71,18 +72,47 @@
             /* align-items: center; */
         }
         a{
-            display: block;
+            display: inline-block;
             margin-top: 50px;
             text-decoration: none;
-            color: rgb(99, 156, 231)
+            color: rgb(99, 156, 231);
+            font-weight: 600;
         }
-        a::after{
-            content: '→';
+        .line{
+            display: inline-block;
+            width: 20px;
+            height: 2px;
+            margin-bottom: 4px;
+            border-top: 1px solid rgb(99, 156, 231);
+            border-bottom: 1px solid rgb(99, 156, 231);
+            background-color: rgb(99, 156, 231);
+            position: relative;
         }
-        a:hover::after{
-            content: '—→';
-            letter-spacing: 0em;
+        a:hover .line{
+            display: inline-block;
+            width: 40px;
+            height: 2px;
+            margin-bottom: 4px;
+            border-top: 1px solid rgb(99, 156, 231);
+            border-bottom: 1px solid rgb(99, 156, 231);
+            background-color: rgb(99, 156, 231);
+            position: relative;
+            transition: 0.5s ease;
         }
+        .arrow{
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            margin-bottom: 2px;
+            border-top: 3px solid rgb(99, 156, 231);
+            border-right: 3px solid rgb(99, 156, 231);
+            transform: rotate(45deg);
+            position: relative;
+            left: -9px;
+            bottom: -2px;
+        }
+        
+        
         img{
             width: 100%;
         }
@@ -155,7 +185,9 @@
                         <li>開放 HTML／CSS 編輯</li>
                     </ul>
                 </div>
-                <a href="">看看開店秘技</a>
+                <a href="">看看開店秘技
+                    <span class="line"></span><span class="arrow"></span>
+                </a>
             </div>
             <div class="banner"><img src="https://shoplineimg.com/59c0fd06080f0690b5000cd1/60b0c566ec23b10026db7112/565x.webp?source_format=png"></div>
         </div>  
@@ -173,7 +205,9 @@
                         <li>發票開立與串接</li>
                     </ul>
                 </div>
-                <a href="">了解更多金物流</a>
+                <a href="">了解更多金物流
+                    <span class="line"></span><span class="arrow"></span>
+                </a>
             </div>
             <div class="banner"><img src="https://img.shoplineapp.com/media/image_clips/629831693893500024b7cc23/original.png?1654141289"></div>
         </div>  
@@ -191,7 +225,9 @@
                         <li>Facebook／Instagram／LINE 對話式購物</li>
                     </ul>
                 </div>
-                <a href="">看更多優惠模組</a>
+                <a href="">看更多優惠模組
+                    <span class="line"></span><span class="arrow"></span>
+                </a>
             </div>
             <div class="banner"><img src="https://img.shoplineapp.com/media/image_clips/60a4d354df356c0012a8a223/original.png?1621414740"></div>
         </div>  
@@ -209,7 +245,9 @@
                         <li>串接 Shopee 蝦皮購物庫存</li>
                     </ul>
                 </div>
-                <a href="">了解更多全台通路組合</a>
+                <a href="">了解更多全台通路組合
+                    <span class="line"></span><span class="arrow"></span>
+                </a>
             </div>
             <div class="banner"><img src="https://img.shoplineapp.com/media/image_clips/60a4d3540289ef002f2150cb/original.png?1621414740"></div>
         </div>  
