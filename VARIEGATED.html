@@ -275,6 +275,9 @@
             width: 20%;
             position: relative;
         }
+        .product-item:hover ul{
+            opacity: 0;
+        }
         .product-item li{
             list-style: none;
             font-size: 18px;
@@ -300,12 +303,55 @@
         .product-item-icon{
             width: 70px;
             height: 25px;
-            background-color: rgba(253, 117, 6, 0.2);
+            background-color: rgb(241, 136, 50);
             position: absolute;
-            z-index: 2;
+            z-index: 4;
             right: 0;
             top: 20px;
         }
+        .product-icon-buy{
+            position: absolute;
+            opacity: 0;
+        }
+        .product-item:hover .product-icon-buy{
+            position: absolute;
+            width: 80%;
+            height: 10%;
+            background-color: rgb(0, 0, 0);
+            z-index: 3;
+            left: 0;
+            bottom: 20px;
+            opacity: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.8s ease;
+
+        }
+        .product-icon-buy span{
+            color: #FFF;
+            font-size: 13px;
+            cursor: pointer;
+        }
+        .product-item:hover .product-icon-buy:hover{
+            color: #fff;
+            background-color: rgba(224, 34, 161, 0.363);
+            cursor: pointer;
+        }
+        
+        .product-item:hover .product-icon-bac{
+            position: absolute;
+            width: 100%;
+            height: 80%;
+            background-color: rgb(0, 0, 0);
+            z-index: 3;
+            right: 0;
+            top: 0;
+            opacity: 0.5;
+            transition: 0.8s ease;
+
+        }
+        
         .product-item-icon .word{
             position: absolute;
             top: 50%;
@@ -614,7 +660,11 @@
         <h1>MOST RECENT POPULAR MODELS</h1>
         <div class="product-group">
             <div class="product-item">
+                <div class="product-icon-bac"></div>
                 <img src="https://ld-wp.template-help.com/monstroid1/prod-14924/wp-content/uploads/2018/02/Buttoned-shirt_2-270x343.jpg" alt="">
+                <div class="product-icon-buy">
+                    <span>SELECT OPTION</span>
+                </div>
                 <ul>
                     <li class="categories">BLAZERS JUMPSUITS</li>
                     <li>BUTTONED SHIRT</li>
@@ -622,12 +672,16 @@
                 </ul>
             </div>
             <div class="product-item">
+                <div class="product-icon-bac"></div>
                 <div class="product-item-icon">
                     <span class="word">
                         Featured
                     </span>
                 </div>
                 <img src="https://ld-wp.template-help.com/monstroid1/prod-14924/wp-content/uploads/2018/02/Checked-tunic_1-270x343.jpg" alt="">
+                <div class="product-icon-buy">
+                    <span>SELECT OPTION</span>
+                </div>
                 <ul>
                     <li class="categories">TROUSERS-SHORTS BLAZERS DRESSES</li>
                     <li>CHECKED TUNIC</li>
@@ -635,12 +689,16 @@
                 </ul>
             </div>
             <div class="product-item">
+                <div class="product-icon-bac"></div>
                 <div class="product-item-icon">
                     <span class="word">
                         Featured
                     </span>
                 </div>
                 <img src="https://ld-wp.template-help.com/monstroid1/prod-14924/wp-content/uploads/2018/02/Embroidered-shirt_1-270x343.jpg" alt="">
+                <div class="product-icon-buy">
+                    <span>SELECT OPTION</span>
+                </div>
                 <ul>
                     <li class="categories">TROUSERS-SHORTS BLAZERS DRESSES JUMPSUITS</li>
                     <li>EMBROIDERED SHIRT</li>
@@ -648,7 +706,11 @@
                 </ul>
             </div>
             <div class="product-item">
+                <div class="product-icon-bac"></div>
                 <img src="https://ld-wp.template-help.com/monstroid1/prod-14924/wp-content/uploads/2018/02/Faux-leather-jacket-with-flowing-lapels_1-270x343.jpg" alt="">
+                <div class="product-icon-buy">
+                    <span>SELECT OPTION</span>
+                </div>
                 <ul>
                     <li class="categories">TROUSERS-SHORTS BLAZERS NEW ARRIVAL</li>
                     <li>FAUX LEATHER JACKET WITH</li>
@@ -656,12 +718,16 @@
                 </ul>
             </div>
             <div class="product-item">
+                <div class="product-icon-bac"></div>
                 <div class="product-item-icon">
                     <span class="word">
                         Featured
                     </span>
                 </div>
                 <img src="https://ld-wp.template-help.com/monstroid1/prod-14924/wp-content/uploads/2018/02/Lightweight-puffer-jacket_2-270x343.jpg" alt="">
+                <div class="product-icon-buy">
+                    <span>SELECT OPTION</span>
+                </div>
                 <ul>
                     <li class="categories">TROUSERS-SHORTS BLAZERS DRESSES JUMPSUITS</li>
                     <li>LIGHTWEIGHT PUFFER JACKET</li>
@@ -669,7 +735,11 @@
                 </ul>
             </div>
             <div class="product-item">
+                <div class="product-icon-bac"></div>
                 <img src="https://ld-wp.template-help.com/monstroid1/prod-14924/wp-content/uploads/2018/02/Polka-dot-shirt-dress_2-270x343.jpg" alt="">
+                <div class="product-icon-buy">
+                    <span>SELECT OPTION</span>
+                </div>
                 <ul>
                     <li class="categories">TROUSERS-SHORTS BLAZERS DRESSES</li>
                     <li>POLKA DOT SHIRT DRESS</li>
@@ -677,7 +747,11 @@
                 </ul>
             </div>
             <div class="product-item">
+                <div class="product-icon-bac"></div>
                 <img src="https://ld-wp.template-help.com/monstroid1/prod-14924/wp-content/uploads/2018/02/Ripped-denim-jacket_2-270x343.jpg" alt="">
+                <div class="product-icon-buy">
+                    <span>SELECT OPTION</span>
+                </div>
                 <ul>
                     <li class="categories">TROUSERS-SHORTS BLAZERS DRESSES JUMPSUITS</li>
                     <li>RIPPED DENIM JACKET</li>
@@ -685,12 +759,16 @@
                 </ul>
             </div>
             <div class="product-item">
+                <div class="product-icon-bac"></div>
                 <div class="product-item-icon">
                     <span class="word">
                         Featured
                     </span>
                 </div>
                 <img src="https://ld-wp.template-help.com/monstroid1/prod-14924/wp-content/uploads/2018/02/Suede-effect-dress_1-270x343.jpg" alt="">
+                <div class="product-icon-buy">
+                    <span>SELECT OPTION</span>
+                </div>
                 <ul>
                     <li class="categories">TROUSERS-SHORTS BLAZERS DRESSES JUMPSUITS</li>
                     <li>SUEDE EFFECT DRESS</li>
