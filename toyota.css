@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.toyotaFaithWrapper{
+    position: relative;
+}
+.toyotaFaith-Desc-Wrapper{
+    box-sizing: border-box;
+    margin: auto;
+    max-width: 700px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+.toyotaFaith-Desc{
+    background-color: #000;
+    color: #fff;
+}
+.toyotaFaith-Desc h1{
+    font-size: 50px;
+    background-color: rgba(255, 0, 0, 0.89);
+    font-weight: 300;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.toyotaFaithWrapper:nth-child(even) .toyotaFaith-Desc h1{
+    flex-direction: row-reverse;
+}
+.toyotaFaith-Desc h1 span{
+    writing-mode: vertical-lr;
+    position: relative;
+    top: 10px;
+    font-size: 100px;
+    font-weight: 100;
+    padding-bottom: 20px;
+}
+.toyotaFaith-Desc h2{
+    padding: 10px 10px 5px 10px ;
+} 
+.toyotaFaith-Desc p{
+    font-size: 18px;
+    padding: 0 5px 10px 10px;
+}
+
+.toyotaFaith a{
+    display: block;
+    margin-top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 700px;
+    margin: auto;
+    position: relative;
+}
+.toyotaFaith a img{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    background-size: cover;
+}
+.toyotaCarDesc-Wrapper{
+    box-sizing: border-box;
+    padding: 0 10px;
+    margin: auto;
+}
+.toyotaCarDesc{
+    background-color: rgb(238, 238, 238);
+    max-width: 680px;
+    margin: auto;
+    box-sizing: border-box;
+}
+.toyotaCarDesc h1{
+    color: rgb(197, 38, 38);
+    font-size: 20px;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.toyotaCarDesc h1::after{
+    content: '';
+    position: relative;
+    
+}
+.toyotaCarDesc li{
+    list-style: none;
+    display: block;
+}
+.toyotaCarDesc li h2{
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    background-color: #000;
+    width: 35%;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    text-align: left;
+    margin-left: 10px;
+    line-height: 30px;
+    display: inline;
+}
+.toyotaCarDesc p{
+    font-size: 16px;
+    text-align: left;
+    margin-top: 5px;
+    padding-left: 2em;
+    padding-right: 0.4em;
+    padding-bottom: 1em;
+}
+.toyotaCarDesc p::before{
+    content: '▪ ';
+    margin-left: -0.6em;
+    color: rgb(255, 0, 0);
+}
+@media screen and (min-width:768px) {
+    .toyotaFaith a::after{
+        content: '';
+        width: 439px;
+        height: 290px;
+        background-color: rgba(204, 204, 204, 0.507);
+        position: absolute;
+        top:-80px;
+        right: -70px;
+        z-index: -1;
+    }
+    .toyotaFaith-Desc{
+        position: relative;
+        left: -40px;
+        top:30px;
+        z-index:3;
+        max-width: 600px;
+        transition: 0.15s ease;
+    }
+    .toyotaFaithWrapper:nth-child(even) .toyotaFaith-Desc{
+        position: relative;
+        left: -40px;
+        top:30px;
+        z-index:3;
+        transition: 0.15s ease;
+    }
+    .toyotaFaithWrapper{
+        padding-top:200px;
+    }
+@media screen and (min-width:992px) {
+    .toyotaFaith a::after{
+        content: '';
+        width: 439px;
+        height: 290px;
+        background-color: rgba(204, 204, 204, 0.507);
+        position: absolute;
+        top:-80px;
+        right: -70px;
+        z-index: -1;
+    }
+    .toyotaFaith a{
+        position: relative;
+        left: 40px;
+        transition: 0.15s ease;
+    }
+    .toyotaFaithWrapper:nth-child(even) .toyotaFaith a{
+        left: -120px;
+        transition: 0.15s ease;
+    }
+    .toyotaFaith-Desc{
+        position: relative;
+        left: -100px;
+        top:100px;
+        z-index:3;
+        max-width: 300px;
+        transition: 0.15s ease;
+    }
+    .toyotaFaith-Desc h1{
+        font-size: 40px;
+    }
+    .toyotaFaithWrapper:nth-child(even) .toyotaFaith-Desc{
+        position: relative;
+        left: 480px;
+        top:100px;
+        z-index:3;
+        transition: 0.15s ease;
+    }
+    .toyotaFaithWrapper{
+        padding-top:200px;
+    }
+    .toyotaFaithWrapper:nth-of-type(odd) .toyotaCarDesc{
+        position: relative;
+        right: 60px;
+        bottom: 30px;
+        transition: 0.15s ease;
+    }
+    .toyotaFaithWrapper:nth-of-type(even) .toyotaCarDesc{
+        position: relative;
+        left: 60px;
+        bottom: 30px;
+        transition: 0.15s ease;
+    }
+}
+}
