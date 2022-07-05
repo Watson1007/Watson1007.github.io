@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+table{
+    display: block;
+    width: 75%;
+    margin: auto;
+    font-family: 'Poppins';
+    outline: 10px solid #000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+thead,tbody{
+    display: block;
+    width: 100%;
+}
+th{
+    display: flex;
+    width: 100%;
+}
+tr{
+    display: flex;
+    width: 100%;
+}
+tr:nth-child(odd){
+    background-color: #ccc8cc8a;
+}
+td{
+    width: 25%;
+    display: block;
+    box-sizing: border-box;
+    outline: 1px solid #000;
+    font-size: 20px;
+    text-align: center;
+}
+.chartContainer{
+    display: block;
+    margin: auto;
+}
