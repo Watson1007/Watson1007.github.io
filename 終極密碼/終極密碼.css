@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    border: 5px solid #000;
+    width: 75%;
+    margin: auto;
+    margin-top: 200px;
+    position: relative;
+}
+.menuContainer{
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 30px;
+}
+.start{
+    background-color: rgba(255, 0, 0, 0.432);
+    cursor: pointer;
+}
+.restart{
+    background-color: rgba(15, 158, 15, 0.267);
+    cursor: pointer;
+}
+.present{
+    background-color: rgb(250, 188, 17);
+    cursor: pointer;
+}
+.inputContainer{
+    display: flex;
+    max-width: 500px;
+    margin: auto;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.inputDESC{
+    width: 30%;
+    background-color: #ccc;
+}
+.inputAction{
+    flex: 1;
+    padding-left: 15px;
+}
+.submit{
+    width: 10%;
+    line-height: 50px;
+    text-align: center;
+    border: 2px solid #000;
+    border-radius: 50%;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.recordContainer{
+    max-width: 500px;
+    margin: auto;
+    min-height: 200px;
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+.record{
+    display: flex;
+    max-width: 75%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    flex-wrap: wrap;
+}
+.AB{
+    display: block;
+    width: 15%;
+    background-color: #f00;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+.number{
+    display: block;
+    padding: 10px;
+    padding-left: 30px;
+    width: 75%;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.showAnswer{
+    display: block;
+    position: absolute;
+    right: 1%;
+    top: 160px;
+    border: 1px solid #000;
+    width: 20%;
+    height: 50px;
+    color: #f00;
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+}
