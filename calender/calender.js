@@ -67,7 +67,6 @@ function createCalender() {
       });
 
       let localData = localStorage.getItem(`${storage}`) && JSON.parse(localStorage.getItem(`${storage}`));
-      console.log(localData);
       if(localData){
         for(let i = 0; i < localData.length; i++){
             let div = document.createElement('div');
@@ -120,7 +119,6 @@ function storage(){
       color = '#ffffff';
     } 
     input.color = color ?  color : qs_color.value;
-    // input.color = qs_color.value;
     data.push(input);
     localStorage.setItem(`${qs_getDate.textContent}`,JSON.stringify(data));
     qs_insertDay.innerHTML = "";
