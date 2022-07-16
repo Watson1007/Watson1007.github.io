@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calender.css">
+    <script src="https://kit.fontawesome.com/68b451df5d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container ">
+        <div class="arrowContainer">
+            <i class="fa-solid fa-caret-left leftarrow"></i>
+        </div>
+        <div class="date"></div>
+        <div class="arrowContainer">
+            <i class="fa-solid fa-caret-right rightarrow"></i>
+        </div>
+        <div class="dayOfWeekContainer">
+            <div class="dayOfWeek">
+                Sun
+            </div>
+        </div>
+        <div class="dayOfWeekContainer">
+            <div class="dayOfWeek">
+                Mon
+            </div>
+        </div>
+        <div class="dayOfWeekContainer">
+            <div class="dayOfWeek">
+                Tue
+            </div>
+        </div>
+        <div class="dayOfWeekContainer">
+            <div class="dayOfWeek">
+                Wed
+            </div>
+        </div>
+        <div class="dayOfWeekContainer">
+            <div class="dayOfWeek">
+                Thu
+            </div>
+        </div>
+        <div class="dayOfWeekContainer">
+            <div class="dayOfWeek">
+                Fri
+            </div>
+        </div>
+        <div class="dayOfWeekContainer">
+            <div class="dayOfWeek">
+                Sat
+            </div>
+        </div>
+        <div class="insertDay"></div>
+        <div class="lightboxContainer">
+            <input type="checkbox" id="close">
+            <div class="lightbox">
+                <div class="getDate"></div>
+                <input type="text" id="text" placeholder="輸入要紀錄的訊息">
+                <input type="time" id="time">
+                <input type="color" id="color">
+                 <button class="submit">提交</button>
+                 <label for="close" class="x">
+                    <div class="top"></div>
+                    <div class="bottom"></div>
+                </label>
+            </div>
+            
+        </div>
+    </div>
+    <script src="calender.js"></script>
+</body>
+</html>
