@@ -61,6 +61,7 @@ function createCalender() {
       ce_day.textContent = counter;
       counter++;
       let storage = `${yearAndMonth}${i - firstDayOfWeek + 1}`;
+      if(storage===`${new Date().getFullYear()}${new Date().getMonth()+1}${new Date().getDate()}`)ce_day.classList.add('red');
       ce_day.setAttribute("storage", `${storage}`);
       ce_day.addEventListener("click", (event) => {
         return showLightBox(event);
