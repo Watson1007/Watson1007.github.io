@@ -1,0 +1,23 @@
+.inputGroup .form-control{
+    width: 500px;
+    display: inline-block;
+}
+.inputGroup{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+.input-group{
+    justify-content: center;
+    position: relative;
+}
+.input-group input.form-control{
+    display: block;
+    width: 500px;
+    flex:0 0 auto;
+    margin-right: 10px;
+}
+.input-group .checkbox{
+    display: block;
+    margin: 10px;
+}
